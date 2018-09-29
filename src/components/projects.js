@@ -9,13 +9,13 @@ class Projects extends Component{
 toggleCategories(){
   if(this.state.activeTab === 0){
     return(
-      <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+      <Card shadow={5} style={{minWidth: '450', margin: 'auto', textAlign: 'center'}}>
         <CardTitle style={{color: 'black', heigh: '176px', background: 'url(https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png) center / cover'}}>Farmers Market</CardTitle>
         <CardText>Farmers Market connects with the USDA's API and tells you where's your nearest farmers market and details their produce. </CardText>
         <CardActions border>
-          <Button colored href='https://github.com/freimanmarc/Farmers-Market'>GitHub
+          <Button
+            colored href='https://github.com/freimanmarc/Farmers-Market'>GitHub
           </Button>
-          <Button colored>LiveDemo</Button>
         </CardActions>
         <CardMenu style={{color: '#fff'}} >
           <IconButton name='share'/>
