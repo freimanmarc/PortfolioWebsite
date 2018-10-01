@@ -9,13 +9,13 @@ class Projects extends Component{
 toggleCategories(){
   if(this.state.activeTab === 0){
     return(
-      <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+      <Card shadow={5} style={{minWidth: '450', margin: 'auto', textAlign: 'center'}}>
         <CardTitle style={{color: 'black', heigh: '176px', background: 'url(https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png) center / cover'}}>Farmers Market</CardTitle>
         <CardText>Farmers Market connects with the USDA's API and tells you where's your nearest farmers market and details their produce. </CardText>
         <CardActions border>
-          <Button colored href='https://github.com/freimanmarc/Farmers-Market'>GitHub
+          <Button
+            colored href='https://github.com/freimanmarc/Farmers-Market'>GitHub
           </Button>
-          <Button colored>LiveDemo</Button>
         </CardActions>
         <CardMenu style={{color: '#fff'}} >
           <IconButton name='share'/>
@@ -24,7 +24,18 @@ toggleCategories(){
     )
   } else if(this.state.activeTab === 1){
     return(
-      <div><h1>This is Rails</h1></div>
+      <Card shadow={5} style={{minWidth: '450', margin: 'auto', textAlign: 'center'}}>
+        <CardTitle style={{color: 'black', heigh: '176px', background: 'url(https://www.bacancytechnology.com/blog/wp-content/uploads/2014/08/rubyonrailswebapplicatondevelopment.png) center / cover'}}>Your Next Move</CardTitle>
+        <CardText>Your Next Move is a test based Ruby on Rails app that recommends careers to those who take it based on conditional logic. It connects to the United States government job search engine, as well as Glassdoor. </CardText>
+        <CardActions border>
+          <Button
+            colored href='http://yournextmove.herokuapp.com/'>Your Next Move
+          </Button>
+        </CardActions>
+        <CardMenu style={{color: '#fff'}} >
+          <IconButton name='share'/>
+        </CardMenu>
+    </Card>
     )
   }
 }
@@ -32,19 +43,19 @@ toggleCategories(){
 
   render(){
     return(
-      <div className='category-tabs'>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple >
-          <Tab>React</Tab>
-          <Tab>Rails</Tab>
-        </Tabs>
+        <div className='category-tabs'>
+          <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple >
+            <Tab>React</Tab>
+            <Tab>Rails</Tab>
+          </Tabs>
 
-          <Grid className='projects-grid'>
-            <Cell col={12}>
+            <Grid className='projects-grid'>
+              <Cell col={12}>
               <div className='content'>{this.toggleCategories()}</div>
             </Cell>
           </Grid>
+        </div>
 
-      </div>
     )
   }
 }
