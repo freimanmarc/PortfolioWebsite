@@ -6,8 +6,8 @@ import { Grid, Cell } from 'react-mdl';
 class Home extends Component {
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}}>
-        <Grid className="landing-grid">
+      <div className="landing-grid" style={{width: '100%', margin: 'auto'}}>
+        <Grid>
           <Cell col={12}>
             <img
               src="https://avatars0.githubusercontent.com/u/37154083?s=460&v=4"

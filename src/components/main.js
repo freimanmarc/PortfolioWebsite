@@ -7,7 +7,7 @@ import Resume from './resume';
 import {Switch, Route} from 'react-router-dom';
 
 const Main = () => (
-  <Switch>
+  <Switch className="landing-grid">
     <Route exact path="/" component={Home} />
     <Route path="/contact" component={Contact} />
     <Route path="/Projects" component={Projects} />

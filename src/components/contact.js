@@ -7,7 +7,7 @@ class Contact extends Component{
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Marc Freiman</h2>
+            <h2>Marc Isaac Freiman</h2>
             <img id="marc" src={process.env.PUBLIC_URL + '/marc.jpg'} alt="avatar"/>
             <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>
               <h5>Bio</h5>
