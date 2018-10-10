@@ -17,6 +17,13 @@ toggleCategories(){
             colored href='https://github.com/freimanmarc/Farmers-Market'>GitHub
           </Button>
         </CardActions>
+        <CardTitle style={{color: 'black', heigh: '176px', background: 'url(https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png) center / cover'}}>Sofie Freiman Photography</CardTitle>
+        <CardText>Mobile responsive React.js portfolio website made with bootstrap and ReactMDL. </CardText>
+        <CardActions border>
+          <Button
+            colored href='https://sofiefreimanphotography.herokuapp.com'> sofiefreimanphotography
+          </Button>
+        </CardActions>
         <CardMenu style={{color: '#fff'}} >
           <IconButton name='share'/>
         </CardMenu>
